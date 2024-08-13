@@ -16,6 +16,7 @@ This exercise contains a base class named Furniture to hold the common propertie
      - Should display the Furniture details available by calling Display method
 ```
 The program should also contain definitions for  class types as suggested below:
+ ``
   +Furniture : class
      - Should contain properties such as Height,Widthe,Color,Qty,Price 
      - Accept method to Accept Common Furniture details 
@@ -27,3 +28,4 @@ The program should also contain definitions for  class types as suggested below:
   + DiningTable : class
      - Child class of Furniture with additional NoOfLegs Property
      - Should declare Accept and Display function to Read Additional Property
+     ```
