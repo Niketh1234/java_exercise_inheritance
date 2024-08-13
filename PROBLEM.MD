@@ -20,7 +20,7 @@ The program should also contain definitions for  class types as suggested below:
   +Furniture : class
      - Should contain properties such as Height,Widthe,Color,Qty,Price 
      - Accept method to Accept Common Furniture details 
-
+```
   + BookShelf : class
      - Child class of Furniture with additional NoOfShelves Property
      - Should declare Accept and Display function to Read Additional Property
