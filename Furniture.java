@@ -1,33 +1,29 @@
 import java.util.Scanner;
 public class Furniture{
-    double Height,Width,Price;
-    String Color;
-    QualityType Qty;
-
-    public void Accept()
+    double height,width,price;
+    String color;
+    int qty;
+    Scanner sc = new Scanner(System.in);
+    public void accept()
     {
         System.out.print("Enter the height                         : ");
-        Height = new Scanner(System.in).nextDouble();
+        height = sc.nextDouble();
         System.out.print("Enter the width                          : ");
-        Width = new Scanner(System.in).nextDouble();
+        width = sc.nextDouble();
         System.out.print("Enter the color                          : ");
-        Color = new Scanner(System.in).next();
-        System.out.print("Enter the quality type (Durable/Fragile) : ");
-        String var = new Scanner(System.in).next();
-        if(var.toLowerCase().equals("durable"))
-            Qty = QualityType.DURABLE;
-        else
-            Qty = QualityType.FRAGILE;
+        color = sc.next();
+        System.out.print("Enter the quantity                       : ");
+        qty = sc.nextInt();
         System.out.print("Enter the price                          : ");
-        Price = new Scanner(System.in).nextDouble();
+        price = sc.nextDouble();
     }
-    public void Display()
+    public void display()
     {
-        System.out.println("Height            : "+Height);
-        System.out.println("Width             : "+Width);
-        System.out.println("Color             : "+Color);
-        System.out.println("quality           : "+Qty);
-        System.out.println("price             : "+Price);
+        System.out.println("Height            : "+height);
+        System.out.println("Width             : "+width);
+        System.out.println("Color             : "+color);
+        System.out.println("quantity          : "+qty);
+        System.out.println("price             : "+price);
         
     }
 }

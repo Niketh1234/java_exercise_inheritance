@@ -1,16 +1,16 @@
 import java.util.*;
 public class BookShelf extends Furniture{
-    byte NoOfShelves;
-    public void Accept()
+    byte noOfShelves;
+    public void accept()
     {
-        super.Accept();
+        super.accept();
         System.out.print("Enter the number of shelves              : ");
-        NoOfShelves = new Scanner(System.in).nextByte();
+        noOfShelves = sc.nextByte();
     }
-    public void Display()
+    public void display()
     {
         System.out.println("\nThe Details of Book Shelf => ");
-        super.Display();
-        System.out.println("Number of Shelves : "+NoOfShelves);
+        super.display();
+        System.out.println("Number of Shelves : "+noOfShelves);
     }
 }

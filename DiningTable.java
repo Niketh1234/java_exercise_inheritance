@@ -1,17 +1,16 @@
-import java.util.*;
 public class DiningTable extends Furniture{
-    byte NoOfLegs;
-    public void Accept()
+    byte noOfLegs;
+    public void accept()
     {
-        super.Accept();
+        super.accept();
         System.out.print("Enter the number of legs                 : ");
-        NoOfLegs = new Scanner(System.in).nextByte();
+        noOfLegs = sc.nextByte();
     }
-    public void Display()
+    public void display()
     {
         System.out.println("\nThe Details of Dining Table => ");
-        super.Display();
-        System.out.println("Number of Legs    : "+NoOfLegs);
+        super.display();
+        System.out.println("Number of Legs    : "+noOfLegs);
         
     }
 }
